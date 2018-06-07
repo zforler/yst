@@ -1,0 +1,9 @@
+/* component/tabpage/tabpage.wxss */
+.tabpage{
+  width:100%;
+}
+.tabpage-bar{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,20 @@
+<!--component/tabpage/tabpage.wxml-->
+<view class='tabpage'>
+  <view class='tabpage-bar'>
+    <view wx:for="{{tabParams.tabs}}" wx:key="key">
+      <view class='tabpage-tab' data-id='{{item.key}}' catch:tap='onTap'>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='tabpage-page'>
+    <view wx:for="{{tabParams.tabs}}" wx:key="key">
+      <view hidden="{{item.hide}}">
+        {{item.name}}
+      </view>
+    </view>
+  
+   
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<view class='container'>
+  <view class='custom-top'>
+  
+  </view>
+
+  <view class='custom-shop'>
+    <view class='custom-shop-bar'>
+      <view wx:for="{{tabParams.tabs}}" wx:key="key" class='tabpage-tab {{item.hide===""?clickTabClass:""}}' data-id='{{item.key}}' catch:tap='tabClick'>
+        {{item.name}}
+    </view>
+    </view>
+
+    <view class='tabpage-page'>
+      <view class="tabpage-page-in" wx:for="{{tabParams.tabs}}" wx:key="key" id="tabpage-page-{{item.key}}"  hidden="{{item.hide}}">
+          <view class="goods goods-type-1">
+            <image class='goods-image-1' src="../../img/test.png"></image>
+          </view>
+          <view class="goods goods-type-1">
+            <image class='goods-image-1' src="../../img/test.png"></image>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

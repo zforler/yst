@@ -1,0 +1,16 @@
+.goods{
+  
+}
+.goods-type-1{
+  width:var(--goods-type-a);
+  height:auto;
+  border:red thin solid;
+  float: left;
+}
+.goods-type-1:nth-of-type(even){
+  margin-left:20rpx;
+}
+.goods-image-1{
+  width:var(--goods-type-a);
+  height:var(--goods-type-a);
+}

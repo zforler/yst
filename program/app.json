@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/custom/custom",
+    "pages/index/index",
+   
+    "pages/logs/logs"
+  ],
+  "window":{
+
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF4421",
+    "navigationBarTitleText": "聚微商",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+    "tabBar": {
+      "position":"bottom",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页"
+        },
+        {
+          "pagePath": "pages/custom/custom",
+          "text": "我的店铺"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "日志"
+        }
+      ]
+    }
+}

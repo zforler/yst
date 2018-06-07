@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='shop-top'>
+      <view class='shop-top-search'>
+          <text class="fa fa-search"></text>
+          <text>搜索</text>
+      </view>
+      <view class='index-tip'>
+        <view class='index-tip-item'>
+            <text class="fa fa-check-circle-o"></text>
+            <text>注意假冒伪劣</text>
+        </view>
+        <view class='index-tip-item'>
+            <text class="fa fa-check-circle-o"></text>
+            <text>谨防上当受骗</text>
+        </view>
+        <view class='index-tip-item'>
+            <text class="fa fa-check-circle-o"></text>
+            <text>祝您购物愉快</text>
+        </view>
+      </view>
+  </view>
+ 
+  <view class='shop'>
+    <view class='shop-tip'>微商推介>></view>
+    <view class="shop-item">
+      <view class="shop-item-top">
+        <view class="shop-item-info">
+          <image class="show-item-info-img" src='../../img/test.png'></image><text>今天晚上不吃饭</text>
+        </view>
+        <view class="shop-item-info">
+          <text>商品数量:11111</text><text decode="{{true}}" space="{{true}}">&nbsp;|&nbsp;</text><text>好评:1111</text>
+        </view>
+      </view>
+      <view class="shop-item-imgs">
+        <image class='shop-item-img' src='../../img/test.png'></image>
+        <image class='shop-item-img' src='../../img/test.png'></image>
+        <image class='shop-item-img' src='../../img/test.png'></image>
+        <image class='shop-item-img' src='../../img/test.png'></image>
+      </view>
+    </view>
+
+    <view class="shop-item">
+      <view class="shop-item-top">
+        <view class="shop-item-info">
+          <image class="show-item-info-img" src='../../img/test.png'></image><text>今天晚上不吃饭</text>
+        </view>
+        <view class="shop-item-info">
+          <text>商品数量:11111</text>|<text>好评:1111</text>
+        </view>
+      </view>
+      <view class="shop-item-imgs">
+        <image class='shop-item-img' src='../../img/test.png'></image>
+        <image class='shop-item-img' src='../../img/test.png'></image>
+        <image class='shop-item-img' src='../../img/test.png'></image>
+        <image class='shop-item-img' src='../../img/test.png'></image>
+      </view>
+    </view>
+  </view>
+  </view>
+  
