@@ -2,8 +2,8 @@
 page:root{
   /**主题颜色**/
   --t-color: #FF4421;
-  /**goods-type-1**/
-  --goods-type-a: 175px;
+  /**goods-type-1 宽度**/
+  --goods-type-a: 355rpx;
 }
 view{
   font-size: 14px; 

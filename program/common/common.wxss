@@ -1,16 +1,35 @@
 .goods{
+  font-size: 30rpx;
   
 }
-.goods-type-1{
+.goods-type-a{
   width:var(--goods-type-a);
   height:auto;
-  border:red thin solid;
-  float: left;
+  display:inline-block;
+  margin-bottom: 8px;
+  background-color: #fff;
 }
-.goods-type-1:nth-of-type(even){
+.goods-type-a:nth-of-type(even){
   margin-left:20rpx;
 }
-.goods-image-1{
+.goods-image-a{
   width:var(--goods-type-a);
   height:var(--goods-type-a);
+  border-radius: 4px 4px 0 0;
+}
+.goods-type-a-des{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  padding: 0 2px;
+  color:#666;
+}
+.good-type-a-price{
+  float:left;
+  color:#666;
+}
+.good-type-a-xl{
+  float:right;
+  color:#888;
 }
