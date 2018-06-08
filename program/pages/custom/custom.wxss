@@ -31,19 +31,19 @@
   box-sizing: border-box;
   padding-left: 5px;
   color:#999;
-  margin-bottom:8px;
+  margin-bottom:10px;
 }
 .custom-top-des{
   display: flex;
   align-items: center;
 }
 .custom-top-qc{
-  width:150rpx;
-  height:150rpx;
+  width:140rpx;
+  height:140rpx;
 }
 .custom-top-qd{
   color:#fff;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .custom-top-qf{

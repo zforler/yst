@@ -9,9 +9,18 @@ Page({
         {name: '商品列表',key: 'a',hide: ''},
        {name: '买家秀',key: 'b',hide: 'hide'}
       ],
+      tabData:{
+        a: {
+          goodsList: 10
+        },
+        b: {
+          test: '买家秀'
+        }
+      }
     },
     clickTabClass: 'tab-click'
-  
+
+
   },
   onLoad: pageOnLoad,
 

@@ -28,30 +28,22 @@
 
     <view class='tabpage-page'>
       <view class="tabpage-page-in" wx:for="{{tabParams.tabs}}" wx:key="key" id="tabpage-page-{{item.key}}"  hidden="{{item.hide}}">
-          <view class="goods goods-type-a">
-            <image class='goods-image-a' src="../../img/1.jpg"></image>
-            <text class='goods-type-a-des'>商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一</text>
-            <text class='good-type-a-price'>￥332.2</text>
-            <text class='good-type-a-xl' decode="{{true}}" space="{{true}}">好评&nbsp;123</text>
-          </view>
-          <view class="goods goods-type-a">
-            <image class='goods-image-a' src="../../img/1.jpg"></image>
-            <text class='goods-type-a-des'>商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一</text>
-            <text class='good-type-a-price'>￥332.2</text>
-            <text class='good-type-a-xl' decode="{{true}}" space="{{true}}">好评&nbsp;123</text>
-          </view>
-          <view class="goods goods-type-a">
-            <image class='goods-image-a' src="../../img/1.jpg"></image>
-            <text class='goods-type-a-des'>商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一</text>
-            <text class='good-type-a-price'>￥332.2</text>
-            <text class='good-type-a-xl' decode="{{true}}" space="{{true}}">好评&nbsp;123</text>
-          </view>
-          <view class="goods goods-type-a">
-            <image class='goods-image-a' src="../../img/1.jpg"></image>
-            <text class='goods-type-a-des'>商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一</text>
-            <text class='good-type-a-price'>￥332.2</text>
-            <text class='good-type-a-xl' decode="{{true}}" space="{{true}}">好评&nbsp;123</text>
-          </view>
+        <!--商品列表-->
+        <block wx:if="{{tabParams.tabData[item.key].goodsList}}">
+          <block wx:for="{{10}}" wx:key="{{index}}" >
+              <view class="goods goods-type-a">
+                <image class='goods-image-a' src="../../img/1.jpg"></image>
+                <text class='goods-type-a-des'>商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一</text>
+                <text class='good-type-a-price'>￥332.2</text>
+                <text class='good-type-a-xl' decode="{{true}}" space="{{true}}">好评&nbsp;123</text>
+              </view>
+            </block>
+        </block>
+          
+        <block wx:if="{{tabParams.tabData[item.key].test}}">
+            {{tabParams.tabData[item.key].test}}
+        </block>
+          
       </view>
     </view>
   </view>
