@@ -24,11 +24,15 @@ Page({
   },
   onLoad: pageOnLoad,
 
-  tabClick: tabClick
+  tabClick: tabClick,
+
+  goodsClick: goodsClick
 })
 
 
-
+/**
+ * 页面加载
+ */
 function pageOnLoad(e) {
   wx.setNavigationBarColor({
     frontColor: '#000000',
@@ -36,6 +40,9 @@ function pageOnLoad(e) {
   })
 }
 
+/**
+ * tabbar点击切换页面
+ */
 function tabClick(e){
   let id = e.currentTarget.dataset.id,
     tabParams = this.data.tabParams.tabs;
@@ -59,4 +66,15 @@ function tabClick(e){
     tabParams: this.data.tabParams,
   });
 
+}
+
+/**
+ * goods-type-a
+ * 商品点击，进入商品详情页面
+ */
+function goodsClick(e){
+  
+  wx.navigateTo({
+    url: 'goodsdetail/goodsdetail',
+  })
 }

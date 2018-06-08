@@ -31,7 +31,7 @@
         <!--商品列表-->
         <block wx:if="{{tabParams.tabData[item.key].goodsList}}">
           <block wx:for="{{10}}" wx:key="{{index}}" >
-              <view class="goods goods-type-a">
+              <view class="goods goods-type-a" catch:tap="goodsClick">
                 <image class='goods-image-a' src="../../img/1.jpg"></image>
                 <text class='goods-type-a-des'>商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一</text>
                 <text class='good-type-a-price'>￥332.2</text>

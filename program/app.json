@@ -2,7 +2,8 @@
   "pages":[
     "pages/custom/custom",
     "pages/index/index",
-   
+    "pages/mypage/mypage",
+    "pages/custom/goodsdetail/goodsdetail",
     "pages/logs/logs"
   ],
   "window":{
@@ -25,8 +26,8 @@
           "text": "我的店铺"
         },
         {
-          "pagePath": "pages/logs/logs",
-          "text": "日志"
+          "pagePath": "pages/mypage/mypage",
+          "text": "我的"
         }
       ]
     }
