@@ -6,7 +6,7 @@ page:root{
   --goods-type-a: 355rpx;
 }
 view{
-  font-size: 14px; 
+  font-size: 30rpx; 
   font-weight: normal;
    font-family: 'Times New Roman', serif
 }

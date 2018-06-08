@@ -1,6 +1,22 @@
 <view class='container'>
   <view class='custom-top'>
     <image class='custom-top-img' src='../../img/2.jpg'></image>
+    <view class='custom-top-bo'>
+      <view class='custom-top-search'>
+        <text class="fa fa-search"></text>
+        <input placeholder='搜索本店商品'></input>
+      </view>
+      <view class='custom-top-des'>
+        <image class='custom-top-qc' src='../../img/test.png'></image>
+        <view class='custom-top-qd'>
+          <text class='custom-top-qe'>我的小店</text>
+          <text class='custom-top-qf' decode="{{true}}" space="{{true}}">
+          商品数量&nbsp;123&nbsp;&nbsp;好评&nbsp;123</text>
+        </view>
+      </view>
+    
+      
+    </view>
   </view>
 
   <view class='custom-shop'>
