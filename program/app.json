@@ -1,34 +1,50 @@
 {
   "pages":[
-    "pages/custom/custom",
+    "pages/wszm/wszm",
     "pages/index/index",
+    "pages/custom/custom",
     "pages/mypage/mypage",
     "pages/custom/goodsdetail/goodsdetail",
+    "pages/search/search",
+
+     "pages/wszm/wsxq/wsxq", 
+
     "pages/logs/logs"
   ],
   "window":{
-
-    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#FF4421",
     "navigationBarTitleText": "聚微商",
-    "navigationBarTextStyle":"black",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle":"black"
+   
   },
-    "tabBar": {
-      "position":"bottom",
-      "list": [
-        {
-          "pagePath": "pages/index/index",
-          "text": "首页"
-        },
-        {
-          "pagePath": "pages/custom/custom",
-          "text": "我的店铺"
-        },
-        {
-          "pagePath": "pages/mypage/mypage",
-          "text": "我的"
-        }
-      ]
-    }
+  "tabBar": {
+    "position":"bottom",
+    "selectedColor": "#FF4421",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/home.jpg",
+        "selectedIconPath": "img/home_select.jpg"
+      },
+      {
+        "pagePath": "pages/custom/custom",
+        "text": "我的店铺",
+        "iconPath": "img/myshop.jpg",
+        "selectedIconPath": "img/myshop_select.jpg"
+      },
+   
+      {
+        "pagePath": "pages/mypage/mypage",
+        "text": "我的",
+        "iconPath": "img/my.jpg",
+        "selectedIconPath": "img/my_select.jpg"
+      }
+    ]
+  },
+
+
+  "globalData": {
+      "shopId": ""
+  }
 }

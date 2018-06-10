@@ -1,7 +1,8 @@
 <!--index.wxml-->
 <view class="container">
+  
   <view class='shop-top'>
-      <view class='shop-top-search'>
+      <view class='shop-top-search' catch:tap='searchGo'>
           <text class="fa fa-search"></text>
           <text>搜索</text>
       </view>
@@ -20,42 +21,39 @@
         </view>
       </view>
   </view>
- 
-  <view class='shop'>
-    <view class='shop-tip'>微商推介>></view>
-    <view class="shop-item">
-      <view class="shop-item-top">
-        <view class="shop-item-info">
-          <image class="show-item-info-img" src='../../img/test.png'></image><text>今天晚上不吃饭</text>
-        </view>
-        <view class="shop-item-info">
-          <text>商品数量:11111</text><text decode="{{true}}" space="{{true}}">&nbsp;|&nbsp;</text><text>好评:1111</text>
-        </view>
-      </view>
-      <view class="shop-item-imgs">
-        <image class='shop-item-img' src='../../img/test.png'></image>
-        <image class='shop-item-img' src='../../img/test.png'></image>
-        <image class='shop-item-img' src='../../img/test.png'></image>
-        <image class='shop-item-img' src='../../img/test.png'></image>
-      </view>
-    </view>
-
-    <view class="shop-item">
-      <view class="shop-item-top">
-        <view class="shop-item-info">
-          <image class="show-item-info-img" src='../../img/test.png'></image><text>今天晚上不吃饭</text>
-        </view>
-        <view class="shop-item-info">
-          <text>商品数量:11111</text>|<text>好评:1111</text>
-        </view>
-      </view>
-      <view class="shop-item-imgs">
-        <image class='shop-item-img' src='../../img/test.png'></image>
-        <image class='shop-item-img' src='../../img/test.png'></image>
-        <image class='shop-item-img' src='../../img/test.png'></image>
-        <image class='shop-item-img' src='../../img/test.png'></image>
-      </view>
-    </view>
+  <view class='index-top-scroll'>
+      <swiper class='index-wszm-sw' indicator-dots="{{true}}"
+      autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
+      next-margin="0px">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+          <swiper-item>
+            <image src="{{item}}" class="index-wszm-image" catchtap='scrollImgClick'/>
+          </swiper-item>
+        </block>
+      </swiper>
   </view>
+
+  <view class='shop'>
+    <view class='shop-tip'>微商店铺>><text class='index-wsjm' catchtap='wsjmGo'>微商加盟</text></view>
+      <block wx:for="{{10}}" wx:key="{{index}}">
+        <view class="shop-item" catch:tap='shopGo' data-shopId="test">
+          <view class="shop-item-top">
+            <view class="shop-item-info">
+              <image class="show-item-info-img" src='../../img/test.png'></image><text>今天晚上不吃饭</text>
+            </view>
+            <view class="shop-item-info">
+              <text>商品数量:11111</text><text decode="{{true}}" space="{{true}}">&nbsp;|&nbsp;</text><text>好评:1111</text>
+            </view>
+          </view>
+          <view class="shop-item-imgs">
+            <image class='shop-item-img' src='../../img/test.png'></image>
+            <image class='shop-item-img' src='../../img/test.png'></image>
+            <image class='shop-item-img' src='../../img/test.png'></image>
+            <image class='shop-item-img' src='../../img/test.png'></image>
+          </view>
+        </view>
+      </block>
+      
+   </view>
   </view>
   

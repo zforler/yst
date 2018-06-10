@@ -1,0 +1,54 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+
+  <view class='search-top'>
+    <input class='search-input' placeholder='搜索内容'></input><view class='search-btn' catch:tap='search'>搜索</view>
+  </view>
+
+
+  <view class='custom-shop'>
+      <view class='custom-shop-bar'>
+        <view wx:for="{{tabParams.tabs}}" wx:key="key" class='tabpage-tab {{item.hide===""?clickTabClass:""}}' data-id='{{item.key}}' catch:tap='tabClick'>
+          {{item.name}}
+        </view>
+      </view>
+
+      <view class='tabpage-page'>
+        <view class="tabpage-page-in" wx:for="{{tabParams.tabs}}" wx:key="key" id="tabpage-page-{{item.key}}"  hidden="{{item.hide}}">
+          <!--商品列表-->
+          <block wx:if="{{tabParams.tabData[item.key].goodsList}}">
+            <block wx:for="{{10}}" wx:key="{{index}}" >
+                <view class="goods goods-type-a" catch:tap="goodsClick">
+                  <image class='goods-image-a' src="../../img/1.jpg"></image>
+                  <text class='goods-type-a-des'>商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一商品一</text>
+                  <text class='good-type-a-price'>￥332.2</text>
+                  <text class='good-type-a-xl' decode="{{true}}" space="{{true}}">好评&nbsp;123</text>
+                </view>
+              </block>
+          </block>
+            
+          <block wx:if="{{tabParams.tabData[item.key].test}}">
+              <block wx:for="{{10}}" wx:key="{{index}}">
+                <view class="shop-item" catch:tap='shopGo' data-shopId="test">
+                  <view class="shop-item-top">
+                    <view class="shop-item-info">
+                      <image class="show-item-info-img" src='../../img/test.png'></image><text>今天晚上不吃饭</text>
+                    </view>
+                    <view class="shop-item-info">
+                      <text>商品数量:11111</text><text decode="{{true}}" space="{{true}}">&nbsp;|&nbsp;</text><text>好评:1111</text>
+                    </view>
+                  </view>
+                  <view class="shop-item-imgs">
+                    <image class='shop-item-img' src='../../img/test.png'></image>
+                    <image class='shop-item-img' src='../../img/test.png'></image>
+                    <image class='shop-item-img' src='../../img/test.png'></image>
+                    <image class='shop-item-img' src='../../img/test.png'></image>
+                  </view>
+                </view>
+              </block>
+          </block>
+            
+        </view>
+      </view>
+    </view>
+</view>

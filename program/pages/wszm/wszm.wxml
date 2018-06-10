@@ -1,0 +1,24 @@
+<!--pages/wszm/wszm.wxml-->
+<view class='container'>
+  <view class='wszm-search'>
+    <view class='wszm-search-i'><text class='fa fa-search wszm-search-t'></text>搜索</view>
+  </view>
+
+
+  <view class='wszm-list'>
+    <block wx:for="{{10}}" wx:key="index">
+      <view class='wszm-item' catchtap='wszmDetailGo'>
+        <image class='wszm-item-img' src='../../img/1.jpg'></image>
+        <view class='wszm-item-r'>
+          <view class='wszm-item-bqs'>
+            <text class='wszm-item-bq'>鞋子</text><text class='wszm-item-bq'>鞋子</text>
+          </view>
+          <text class='wszm-item-sq' decode="{{true}}" space="{{true}}">商品数&nbsp;123&nbsp;好评&nbsp;123</text>
+          <view class='wszm-item-ms'>
+          商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数商品数
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,6 +1,7 @@
 let commonUtil = require('../../utils/common.js');
+let tabpage = require('../../component/tabpage/tabpage.js');
 
-
+const app = getApp();
 
 Page({
   data: {
@@ -24,7 +25,7 @@ Page({
   },
   onLoad: pageOnLoad,
 
-  tabClick: tabClick,
+  tabClick: tabpage.tabClick,
 
   goodsClick: goodsClick
 })
@@ -37,7 +38,9 @@ function pageOnLoad(e) {
   wx.setNavigationBarColor({
     frontColor: '#000000',
     backgroundColor: '#ffffff',
-  })
+  });
+
+  console.log('shopId--->' + app.globalData.shopId)
 }
 
 /**

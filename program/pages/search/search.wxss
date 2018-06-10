@@ -1,0 +1,35 @@
+/* pages/search/search.wxss */
+@import "../../common/common.wxss";
+@import "../../common/tabpage.wxss";
+@import "../../common/shop.wxss";
+.search-top{
+  width: 100%;
+  background-color: var(--t-grev-back);
+  /* height: 35px; */
+  padding: 8px 15px;
+  box-sizing: border-box;
+}
+.search-input{
+  padding-left: 5px;
+  background-color: #fff;
+  height:35px;
+  width:585rpx;
+  line-height: 35px;
+  display: inline-block;
+}
+.search-btn{
+  height:35px;
+  line-height: 35px;
+  display: inline-block;
+  float:right;
+}
+
+.custom-shop-bar{
+  width: 100%;
+  height: 40px;
+  display: inline-flex;
+  justify-content: space-around;
+
+  align-items: center;
+}
+

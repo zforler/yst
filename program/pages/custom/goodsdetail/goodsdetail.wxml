@@ -1,2 +1,66 @@
-<!--pages/custom/goodsdetail/goodsdetail.wxml-->
-<text>pages/custom/goodsdetail/goodsdetail.wxml</text>
+<view class="container">
+
+  <scroll-view class="scroll-view" scroll-x>
+    <image class="scroll-view-item" src='../../../img/2.jpg'></image>
+    <image class="scroll-view-item" src='../../../img/1.jpg'></image>
+    <image class="scroll-view-item" src='../../../img/2.jpg'></image>
+    <image class="scroll-view-item" src='../../../img/2.jpg'></image>
+  </scroll-view>
+  
+  <view class='detail-a-c detail-a'>
+    <text class='detail-price' decode="{{true}}" space="{{true}}"><text class='detail-rmb'>￥</text>&nbsp;45.12</text>
+    <text class='detail-count' decode="{{true}}" space="{{true}}">好评&nbsp;123</text>
+  </view>
+  
+  <view class='detail-a-c detail-b'>
+    <view class='detail-des'>
+      好怕啥快递发了撒飞洒飞洒法拉瑟就范德萨法拉瑟按附件拉萨解放拉萨飞拉萨解放拉萨法拉瑟啊
+    </view>
+    <view class='detail-fx'>
+      <text class='fa fa-share detail-fxa'></text>
+      <text class='detail-fxb'>分享</text>
+    </view>
+    <view class='detail-cn'>
+      <view class='detail-cn-a'>商家承诺</view>
+      <view class='detail-cn-a detail-cn-aa'>
+        <text class='fa fa-check-circle-o detail-cn-b'></text>
+        <text class='detial-cn-c'>7天发货</text>
+        <text class='fa fa-check-circle-o detail-cn-b'></text>
+        <text class='detial-cn-c'>7天发货</text>
+      </view>
+    </view>
+  
+  </view>
+
+  <view class='detail-goshop'>
+    <view class='detail-gt'>
+      <image class='detail-gimg' src='../../../img/test.png'></image>
+      <text class='detail-ss detail-shopname'>我的商铺</text>
+      <text class='detail-ss detail-shopinfo' decode="{{true}}" space="{{true}}">商品数&nbsp;123&nbsp;好评&nbsp;1123</text>
+    </view>
+    <text class='detail-gsb'>进店逛逛</text>
+  </view>
+
+  <view class='detail-it'>
+    <view class='detail-itt'>
+      <!-- <text class='detail-it-a tabpage-tab'>图文详情</text><text class='detail-it-a tabpage-tab'>买家秀</text> -->
+
+      <text wx:for="{{tabParams.tabs}}" wx:key="key" class='tabpage-tab detail-it-a {{item.hide===""?clickTabClass:""}}' data-id='{{item.key}}' catch:tap='tabClick'>{{item.name}}</text>
+
+    </view>
+  
+      <view class="detail-it-m" wx:for="{{tabParams.tabs}}" wx:key="key" id="tabpage-page-{{item.key}}"  hidden="{{item.hide}}">
+        <!--图文详情-->
+        <block wx:if="{{tabParams.tabData[item.key].goodsList}}">
+          <block wx:for="{{10}}" wx:key="{{index}}" >
+              <image class='detail-it-im' src='../../../img/1.jpg'></image>
+              <image class='detail-it-im' src='../../../img/2.jpg'></image>
+            </block>
+        </block>
+          
+        <block wx:if="{{tabParams.tabData[item.key].test}}">
+            {{tabParams.tabData[item.key].test}}
+        </block>
+      </view>
+  </view>
+</view>

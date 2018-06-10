@@ -1,66 +1,52 @@
-// pages/custom/goodsdetail/goodsdetail.js
+let tabpage = require('../../../component/tabpage/tabpage.js');
+var order = ['red', 'yellow', 'blue', 'green', 'red']
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    
+    tabParams: {
+      tabs: [
+        { name: '图文详情', key: 'a', hide: '' },
+        { name: '买家秀', key: 'b', hide: 'hide' }
+      ],
+      tabData: {
+        a: {
+          goodsList: 10
+        },
+        b: {
+          test: '买家秀'
+        }
+      }
+    },
+    clickTabClass: 'tab-click',
+
+
+    toView: 'red',
+    scrollTop: 100
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
-  },
+  tabClick: tabpage.tabClick,
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
+  upper: function (e) {
+    console.log(e)
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
+  lower: function (e) {
+    console.log(e)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
+  scroll: function (e) {
+    console.log(e)
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
+  tap: function (e) {
+    for (var i = 0; i < order.length; ++i) {
+      if (order[i] === this.data.toView) {
+        this.setData({
+          toView: order[i + 1]
+        })
+        break
+      }
+    }
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
+  tapMove: function (e) {
+    this.setData({
+      scrollTop: this.data.scrollTop + 10
+    })
   }
 })

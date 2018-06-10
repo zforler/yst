@@ -1,0 +1,65 @@
+/* pages/wszm/wszm.wxss */
+.wszm-search{
+  width:100%;
+  background-color: var(--t-grev-back);
+  box-sizing: border-box;
+  padding: 10px 15px;
+  
+}
+.wszm-search-i{
+  background-color: #fff;
+  height:35px;
+  width:100%;
+  text-indent: 5px;
+  line-height: 35px;
+  border-radius: 35px;
+}
+.wszm-search-t{
+  margin-right: 5px;
+}
+
+.wszm-list,.wszm-item{
+  width:100%;
+}
+.wszm-item{
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border-bottom:var(--t-grev-back) 5px solid;
+}
+.wszm-item-img{
+  width: 250rpx;
+  height: 250rpx;
+  display: inline-block;
+}
+.wszm-item-r{
+  display: inline-block;
+  float:right;
+  width:430rpx;
+}
+.wszm-item-bqs{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wszm-item-bq{
+  display: inline-block;
+  padding: 5px;
+  background-color: var(--t-grev-back);
+  margin-right:10px;
+  color:var(--t-color);
+  border-radius: 5px;
+}
+.wszm-item-sq{
+  display: flex;
+  height: 35px;
+  align-items: center;
+}
+.wszm-item-ms{
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  color:#666;
+  
+}

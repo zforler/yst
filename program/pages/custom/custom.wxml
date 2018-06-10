@@ -14,8 +14,6 @@
           商品数量&nbsp;123&nbsp;&nbsp;好评&nbsp;123</text>
         </view>
       </view>
-    
-      
     </view>
   </view>
 
@@ -23,7 +21,7 @@
     <view class='custom-shop-bar'>
       <view wx:for="{{tabParams.tabs}}" wx:key="key" class='tabpage-tab {{item.hide===""?clickTabClass:""}}' data-id='{{item.key}}' catch:tap='tabClick'>
         {{item.name}}
-    </view>
+      </view>
     </view>
 
     <view class='tabpage-page'>

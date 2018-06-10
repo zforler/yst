@@ -1,0 +1,29 @@
+.shop-item{
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.shop-item-top{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.shop-item-info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.show-item-info-img{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.shop-item-img{
+  width: 150rpx;
+  height: 150rpx; 
+}
+
+.shop-item-imgs{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}

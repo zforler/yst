@@ -2,13 +2,20 @@
 page:root{
   /**主题颜色**/
   --t-color: #FF4421;
+
+  --t-grev-a:#999;
+
+  --t-grev-back:#fafafa;
+
   /**goods-type-1 宽度**/
   --goods-type-a: 355rpx;
+
+
 }
 view{
   font-size: 30rpx; 
   font-weight: normal;
-   font-family: 'Times New Roman', serif
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
