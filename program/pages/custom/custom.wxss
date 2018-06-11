@@ -83,3 +83,29 @@
   box-sizing: border-box;
   background-color: #fafafa;
 }
+
+
+
+
+.bbar{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top:#eee thin solid;
+    background-color: #fff;
+    display: flex;
+    height: 45px;
+    justify-content: space-around;
+    align-items: center;
+}
+.bbar-item{
+     border-right:#eee thin solid;
+    flex-grow: 1;
+    height:100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.bbar-item:last-child{
+    border: none;
+}

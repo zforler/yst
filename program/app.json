@@ -1,16 +1,18 @@
 {
   "pages":[
-      
         "pages/index/index",
+      "pages/wszm/wsxq/wsxq",
+      "pages/custom/custom",
+      
         "pages/classify/classify",
         "pages/wszm/wszm",
         
-        "pages/custom/custom",
+        
         "pages/mypage/mypage",
         "pages/custom/goodsdetail/goodsdetail",
         "pages/search/search",
-        "pages/logs/logs",
-        "pages/wszm/wsxq/wsxq"
+        "pages/logs/logs"
+        
   ],
   "window":{
     "navigationBarBackgroundColor": "#FF4421",

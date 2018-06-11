@@ -45,4 +45,11 @@
       </view>
     </view>
   </view>
+
+
+  <view class='bbar'>
+    <view class='bbar-item'>店铺信息</view>
+    <view class='bbar-item'>联系卖家</view>
+    <view class='bbar-item'>举报</view>
+  </view>
 </view>
