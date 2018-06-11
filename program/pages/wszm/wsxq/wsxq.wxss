@@ -1,1 +1,48 @@
 /* pages/wszm/wsxq/wsxq.wxss */
+.wxsq-top,.wxsq-con{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.wxsq-top{
+    position: relative;
+}
+.wxsq-top-img{
+  width: 100%;
+  height:120px;
+}
+.wxsq-top-des{
+    position: absolute;
+    background-color: rgba(255,255,255,0.8);
+    top:50rpx;
+    left:60rpx;
+    padding: 10px;
+    box-sizing: border-box;
+    width:630rpx;
+}
+.wxsq-top-code{
+    width:60px;
+    height:60px;
+    float:left;
+}
+.wxsq-top-text{
+    float:left;
+    width:175px;
+    margin-left:8px;
+    height:35px;
+    line-height: 35px;
+    color:#777;
+}
+.wxsq-top-name{
+    font-size: 18px;
+     color:#333;
+}
+
+.wxsq-show-text{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+}
+.wxsq-show-img{
+    width: 100%;
+}

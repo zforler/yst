@@ -50,7 +50,7 @@ function shopGo(e){
   let dataSet = e.currentTarget.dataset;
   console.log(dataSet)
   app.globalData.shopId = dataSet.shopid;
-  wx.switchTab({
+  wx.navigateTo({
     url: '../custom/custom',
   })
 }

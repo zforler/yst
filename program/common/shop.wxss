@@ -1,6 +1,6 @@
 .shop-item{
   background-color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .shop-item-top{
   display: flex;

@@ -1,15 +1,16 @@
 {
   "pages":[
-    "pages/wszm/wszm",
-    "pages/index/index",
-    "pages/custom/custom",
-    "pages/mypage/mypage",
-    "pages/custom/goodsdetail/goodsdetail",
-    "pages/search/search",
-
-     "pages/wszm/wsxq/wsxq", 
-
-    "pages/logs/logs"
+      
+        "pages/index/index",
+        "pages/classify/classify",
+        "pages/wszm/wszm",
+        
+        "pages/custom/custom",
+        "pages/mypage/mypage",
+        "pages/custom/goodsdetail/goodsdetail",
+        "pages/search/search",
+        "pages/logs/logs",
+        "pages/wszm/wsxq/wsxq"
   ],
   "window":{
     "navigationBarBackgroundColor": "#FF4421",
@@ -28,8 +29,8 @@
         "selectedIconPath": "img/home_select.jpg"
       },
       {
-        "pagePath": "pages/custom/custom",
-        "text": "我的店铺",
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
         "iconPath": "img/myshop.jpg",
         "selectedIconPath": "img/myshop_select.jpg"
       },

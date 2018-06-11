@@ -1,2 +1,16 @@
 <!--pages/wszm/wsxq/wsxq.wxml-->
-<text>pages/wszm/wsxq/wsxq.wxml</text>
+<view class='container'>
+  <view class='wxsq-top'>
+    <image class='wxsq-top-img' src='../../../img/2.jpg'></image>
+    <view class='wxsq-top-des'>
+        <image class='wxsq-top-code' src='../../../img/test.png'></image>
+        <text class='wxsq-top-text wxsq-top-name'>我的小店</text>
+        <text class='wxsq-top-text' decode='{{true}}'>商品数量&nbsp;123&nbsp;&nbsp;好评&nbsp;123</text>
+    </view>
+  </view>
+
+  <view class='wxsq-con'>
+    <text class='wxsq-show-text'>商家描述</text>
+    <image class='wxsq-show-img' src='../../../img/2.jpg'></image>
+  </view>
+</view>
