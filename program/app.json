@@ -1,14 +1,13 @@
 {
   "pages":[
+    "pages/mypage/mypage",
         "pages/index/index",
       "pages/wszm/wsxq/wsxq",
       "pages/custom/custom",
       
         "pages/classify/classify",
         "pages/wszm/wszm",
-        
-        
-        "pages/mypage/mypage",
+       
         "pages/custom/goodsdetail/goodsdetail",
         "pages/search/search",
         "pages/logs/logs"
@@ -31,10 +30,10 @@
         "selectedIconPath": "img/home_select.jpg"
       },
       {
-        "pagePath": "pages/classify/classify",
-        "text": "分类",
-        "iconPath": "img/myshop.jpg",
-        "selectedIconPath": "img/myshop_select.jpg"
+        "pagePath": "pages/wszm/wszm",
+        "text": "微商招募",
+        "iconPath": "img/classify.jpg",
+        "selectedIconPath": "img/classify_select.jpg"
       },
    
       {

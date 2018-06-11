@@ -24,7 +24,6 @@ Page({
   scrollImgClick: scrollImgClick,
   shopGo: shopGo,
   searchGo: searchGo,
-  wsjmGo: wsjmGo
 })
 
 /**
@@ -60,11 +59,5 @@ function shopGo(e){
 function searchGo(){
   wx.navigateTo({
     url: '../search/search',
-  })
-}
-function wsjmGo(e){
-  console.log("微商加盟");
-  wx.navigateTo({
-    url: '../wszm/wszm',
   })
 }

@@ -1,0 +1,19 @@
+.my-top{
+    width:100%;
+    display: flex;
+    justify-content: center;
+     background: linear-gradient(to bottom, var(--t-color) , #FD731C);
+    height: 120px;
+    border-radius: 0 0 10px 10px;
+}
+.my-top-c{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.my-top-im{
+    width:55px;
+    height: 55px;
+    border-radius: 50%;
+}

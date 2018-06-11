@@ -1,6 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  
   <view class='shop-top'>
       <view class='shop-top-search' catch:tap='searchGo'>
           <text class="fa fa-search"></text>
@@ -34,7 +33,7 @@
   </view>
 
   <view class='shop'>
-    <view class='shop-tip'>微商店铺>><text class='index-wsjm' catchtap='wsjmGo'>微商加盟</text></view>
+    <view class='shop-tip'>微商店铺>></view>
       <block wx:for="{{10}}" wx:key="{{index}}">
         <view class="shop-item" catch:tap='shopGo' data-shopId="test">
           <view class="shop-item-top">

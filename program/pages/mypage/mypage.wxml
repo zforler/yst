@@ -1,0 +1,8 @@
+<view class='container'>
+    <view class='my-top'>
+        <view class='my-top-c'>
+            <image src='../../img/test.png' class='my-top-im'></image>
+            <view class='my-top-name'>键盘上的灵魂舞者</view>
+        </view>
+    </view>
+</view>

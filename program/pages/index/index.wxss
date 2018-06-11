@@ -64,7 +64,5 @@
  align-items: center;
  justify-content: space-between;
 }
-.index-wsjm{
-  color: var(--t-color);
-}
+
 
