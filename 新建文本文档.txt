@@ -1,0 +1,25 @@
+ "tabBar": {
+    "position":"bottom",
+    "selectedColor": "#FF4421",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/home.jpg",
+        "selectedIconPath": "img/home_select.jpg"
+      },
+      {
+        "pagePath": "pages/wszm/wszm",
+        "text": "微商招募",
+        "iconPath": "img/classify.jpg",
+        "selectedIconPath": "img/classify_select.jpg"
+      },
+   
+      {
+        "pagePath": "pages/mypage/mypage",
+        "text": "我的",
+        "iconPath": "img/my.jpg",
+        "selectedIconPath": "img/my_select.jpg"
+      }
+    ]
+  }

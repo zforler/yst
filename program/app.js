@@ -33,7 +33,27 @@ App({
     // })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    shopId: "",
+    prevBar: '',
+    tabBar: {
+        index: {
+            index: 0,
+            text: '首页',
+            show: true,
+        },
+        custom: {
+            index: 1,
+            text: '我的店铺',
+            show: true
+        },
+        mypage: {
+            index: 2,
+            text: '我的',
+            show: true
+        }
+    }
+   
   }
 })
 
@@ -46,4 +66,22 @@ function login(){
             console.log(res);
         }
     })
+
+
+    let mark = 0;
+    if(mark == 1){
+        wx.setTabBarItem({
+            index: 1,
+            text: '我的店铺',
+            iconPath: 'img/myshop.jpg',
+            selectedIconPath: 'img/myshop_select.jpg'
+        })
+    }else{
+        wx.setTabBarItem({
+            index: 1,
+            "text": "微商招募",
+            "iconPath": "img/classify.jpg",
+            "selectedIconPath": "img/classify_select.jpg"
+        })
+    }
 }

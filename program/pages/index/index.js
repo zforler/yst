@@ -15,6 +15,10 @@ Page({
     autoplay: false,
     interval: 5000,
     duration: 1000,
+
+
+    pageName: 'index',
+    tabBar: ""
   },
   
 
@@ -24,13 +28,14 @@ Page({
   scrollImgClick: scrollImgClick,
   shopGo: shopGo,
   searchGo: searchGo,
+  tabBarClick: tabBarClick
 })
 
 /**
  * 页面加载
  */
 function pageOnLoad(e) {
- 
+    createBar(this);
 }
 function pageOnReady(e){
   
@@ -39,6 +44,25 @@ function pageOnReady(e){
 function scrollImgClick(e){
   console.log(e);
 }
+
+function createBar(obj){
+    let tabBar = app.globalData.tabBar;
+    console.log(tabBar);
+    tabBar[obj.data.pageName].select = true;
+    if (app.globalData.prevBar){
+
+    }
+    obj.setData({'tabBar':tabBar});
+    app.globalData.prevBar = obj.data.pageName;
+}
+function tabBarClick(e){
+    console.log(e);
+    let page = e.currentTarget.dataset.page;
+    wx.navigateTo({
+        url: `../${page}/${page}`,
+    })
+}
+
 
 /**
  * 点击进入商店
