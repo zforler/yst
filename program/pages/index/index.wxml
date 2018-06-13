@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<!-- <button  open-type="getUserInfo">点击设置以上按钮plain属性</button> -->
 <view class="container">
   <view class='shop-top'>
       <view class='shop-top-search' catch:tap='searchGo'>
