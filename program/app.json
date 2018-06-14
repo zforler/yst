@@ -1,22 +1,18 @@
 {
-  "pages":[
-    
+    "pages": [
         "pages/index/index",
-      "pages/wszm/wsxq/wsxq",
-      "pages/custom/custom",
-      
+        "pages/wszm/wsxq/wsxq",
+        "pages/custom/custom",
         "pages/classify/classify",
         "pages/wszm/wszm",
-       
         "pages/custom/goodsdetail/goodsdetail",
         "pages/search/search",
         "pages/logs/logs",
         "pages/mypage/mypage"
-  ],
-  "window":{
-    "navigationBarBackgroundColor": "#FF4421",
-    "navigationBarTitleText": "聚微商",
-    "navigationBarTextStyle":"black"
-   
-  }
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#FF4421",
+        "navigationBarTitleText": "聚微商",
+        "navigationBarTextStyle": "black"
+    }
 }

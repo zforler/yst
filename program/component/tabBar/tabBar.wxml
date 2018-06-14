@@ -1,0 +1,11 @@
+<template name="tabBar">
+    <view class='tabBar'>
+        <block wx:for="{{tabBar}}" wx:key="index">
+            <block wx:if="{{item.show}}">
+                <view class='tabBarItem {{item.select?"tabBarItem-select":""}}' catchtap='tabBarClick' data-page='{{index}}'>
+                {{item.text}}
+                </view>
+            </block>
+    </block>
+  </view>
+</template>

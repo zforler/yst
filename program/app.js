@@ -1,7 +1,8 @@
 //app.js
 App({
   onLaunch: function () {
-      login();
+
+    //   login.call(this);
 
     // // 展示本地存储能力
     // var logs = wx.getStorageSync('logs') || []
@@ -33,6 +34,7 @@ App({
     // })
   },
   globalData: {
+      serviceUrl: 'http://127.0.0.1/',
     userInfo: null,
     shopId: "",
     prevBar: '',
@@ -47,8 +49,13 @@ App({
             text: '我的店铺',
             show: true
         },
-        mypage: {
+        wszm: {
             index: 2,
+            text: '微商招募',
+            show: false
+        },
+        mypage: {
+            index: 3,
             text: '我的',
             show: true
         }
@@ -59,11 +66,23 @@ App({
 
 
 function login(){
+    let that = this;
+
     // 登录
     wx.login({
         success: res => {
             // 发送 res.code 到后台换取 openId, sessionKey, unionId
             console.log(res);
+            wx.request({
+                method: "POST",
+                url: that.globalData.serviceUrl + 'login',
+                data: {
+                    code: res.code
+                },
+                success: (data)=>{
+                    console.log(data.data.userName);
+                }
+            })
         }
     })
 

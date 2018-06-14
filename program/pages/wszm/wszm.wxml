@@ -22,3 +22,7 @@
     </block>
   </view>
 </view>
+
+
+<import src="../../component/tabBar/tabBar.wxml"/>
+<template is="tabBar" data="{{tabBar: tabBar}}"/>

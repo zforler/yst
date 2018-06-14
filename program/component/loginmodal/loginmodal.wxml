@@ -1,0 +1,10 @@
+<template name="loginModal">
+    <block wx:if="{{loginModal}}">
+        <view class='modal-login'>
+            <text class='fa fa-close modal-login-close' bindtap='loginModalClose'></text>
+            <open-data class="modal-login-img" type="userAvatarUrl"></open-data>
+            <open-data class="modal-login-name" type="userNickName"></open-data>
+            <button class="modal-login-btn" open-type="getUserInfo" bindgetuserinfo="login">授权登录</button>
+        </view>
+    </block>
+</template>
