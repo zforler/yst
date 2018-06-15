@@ -6,6 +6,7 @@
                 {{item.text}}
                 </view>
             </block>
-    </block>
+        </block>
+        
   </view>
 </template>

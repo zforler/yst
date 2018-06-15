@@ -21,6 +21,7 @@ Page({
     duration: 1000,
     pageName: 'index',
     tabBar: "",
+    showTabBar: false
   },
   
 
@@ -48,54 +49,7 @@ function pageOnLoad(e) {
     let that = this;
 
     TabBar.createBar(this,app);
-
-    console.log(123);
-    // 查看是否授权
-    wx.getSetting({
-        success: function (res) {
-            console.log(res);
-            if (res.authSetting['scope.userInfo']) {
-                // 已经授权，可以直接调用 getUserInfo 获取头像昵称
-                LoginModal.login.call(that);
-            }
-            else{
-                LoginModal.show.call(that);
-            }
-        },
-        fail: (e) => {
-            console.log(e);
-            LoginModal.show.call(that);
-        }
-    })
-}
-
-function login() {
-    let that = this;
-    LoginModal.close.call(that);
-    console.log(e);
-    wx.getUserInfo({
-        success: function (res) {
-            console.log(res.userInfo)
-            // 登录
-            wx.login({
-                success: res => {
-                    // 发送 res.code 到后台换取 openId, sessionKey, unionId
-                    console.log(res);
-                    wx.request({
-                        method: "POST",
-                        url: that.globalData.serviceUrl + 'login',
-                        data: {
-                            code: res.code
-                        },
-                        success: (data) => {
-                            console.log(data.data.userName);
-                        }
-                    })
-                }
-            })
-        }
-    });
-   
+    LoginModal.loginCheck.call(this);
 }
 
 

@@ -36,26 +36,32 @@ App({
   globalData: {
       serviceUrl: 'http://127.0.0.1/',
     userInfo: null,
-    shopId: "",
+    shopId: "111",
     prevBar: '',
+    
     tabBar: {
         index: {
             index: 0,
             text: '首页',
             show: true,
         },
-        custom: {
+        create: {
             index: 1,
+            text: '创建店铺',
+            show: true,
+        },
+        custom: {
+            index: 2,
             text: '我的店铺',
             show: true
         },
         wszm: {
-            index: 2,
+            index: 3,
             text: '微商招募',
-            show: false
+            show: true
         },
         mypage: {
-            index: 3,
+            index: 4,
             text: '我的',
             show: true
         }
@@ -63,44 +69,3 @@ App({
    
   }
 })
-
-
-function login(){
-    let that = this;
-
-    // 登录
-    wx.login({
-        success: res => {
-            // 发送 res.code 到后台换取 openId, sessionKey, unionId
-            console.log(res);
-            wx.request({
-                method: "POST",
-                url: that.globalData.serviceUrl + 'login',
-                data: {
-                    code: res.code
-                },
-                success: (data)=>{
-                    console.log(data.data.userName);
-                }
-            })
-        }
-    })
-
-
-    let mark = 0;
-    if(mark == 1){
-        wx.setTabBarItem({
-            index: 1,
-            text: '我的店铺',
-            iconPath: 'img/myshop.jpg',
-            selectedIconPath: 'img/myshop_select.jpg'
-        })
-    }else{
-        wx.setTabBarItem({
-            index: 1,
-            "text": "微商招募",
-            "iconPath": "img/classify.jpg",
-            "selectedIconPath": "img/classify_select.jpg"
-        })
-    }
-}

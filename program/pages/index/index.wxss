@@ -103,3 +103,11 @@
 .modal-login-close:hover{
     color:var(--t-color);
 }
+.modal-login-bottom{
+    height: var(--tabbar-height);
+    background-color: #fff;
+    width:100%;
+    display: block;
+    position: fixed;
+    bottom: 0px;
+}

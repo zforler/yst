@@ -1,2 +1,7 @@
 <!--pages/classify/classify.wxml-->
-<text>pages/classify/classify.wxml</text>
+<!--分类-->
+<view class='container'>
+    <form>
+        sss
+    </form>
+</view>

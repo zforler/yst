@@ -1,0 +1,15 @@
+<!--pages/create/create.wxml-->
+<!--创建店铺-->
+<view class='container'>
+    <form>
+        <view>
+            <text>店铺被名称</text><input></input>
+            <text>店铺类别</text>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                当前选择：{{array[index]}}
+                </view>
+            </picker>
+        </view>
+    </form>
+</view>

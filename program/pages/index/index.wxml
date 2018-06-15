@@ -68,7 +68,10 @@
   </view> -->
 
 <import src="../../component/tabBar/tabBar.wxml"/>
-<template is="tabBar" data="{{tabBar: tabBar}}"/>
-
+<block wx:if="{{showTabBar}}">
+    <template is="tabBar" data="{{tabBar: tabBar}}"/>
+</block>
 <import src="../../component/loginmodal/loginmodal.wxml"/>
 <template is="loginModal" data="{{loginModal: loginModal}}"/>
+
+

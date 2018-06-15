@@ -10,7 +10,7 @@ page:root{
   /**goods-type-1 宽度**/
   --goods-type-a: 355rpx;
 
-
+    --tabbar-height: 50px;
 }
 view{
   font-size: 30rpx; 
@@ -25,7 +25,7 @@ view{
     border-top:#eee thin solid;
     background-color: #fff;
     display: flex;
-    height: 55px;
+    height: var(--tabbar-height);
     justify-content: space-around;
     align-items: center;
 }

@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/create/create",
         "pages/index/index",
         "pages/wszm/wsxq/wsxq",
         "pages/custom/custom",
@@ -9,6 +10,7 @@
         "pages/search/search",
         "pages/logs/logs",
         "pages/mypage/mypage"
+     
     ],
     "window": {
         "navigationBarBackgroundColor": "#FF4421",
