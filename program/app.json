@@ -1,7 +1,8 @@
 {
     "pages": [
+          
         "pages/create/create",
-        "pages/index/index",
+      "pages/index/index",
         "pages/wszm/wsxq/wsxq",
         "pages/custom/custom",
         "pages/classify/classify",
@@ -13,7 +14,7 @@
      
     ],
     "window": {
-        "navigationBarBackgroundColor": "#FF4421",
+        "navigationBarBackgroundColor": "#ffffff",
         "navigationBarTitleText": "聚微商",
         "navigationBarTextStyle": "black"
     }
