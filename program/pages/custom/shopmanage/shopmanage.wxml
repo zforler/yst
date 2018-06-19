@@ -1,7 +1,17 @@
 <!--pages/custom/shopmanage/shopmanage.wxml-->
 <view class='container'>
-    <view><input value='' placeholder='搜索'></input></view>
-    <view>商品列表</view>
+    <view class='gs-search'>
+        <view class='gs-search-a'><text class='fa fa-search gd-s-icon'></text><input class='gd-s-input' placeholder='商品名称/编号'></input></view>
+        <text>搜索</text>
+    </view>
+    <view class='gd-head'>
+        <text class='gd-head-a'>商品列表</text>
+        <view class='gd-head-b'>
+            <text class='gd-head-c' bindtap='addGoods'>新增</text>
+            <text class='gd-head-c' bindtap='deleteGoods'>删除</text>
+        </view>
+        
+    </view>
 
     <view class='gd-list'>
         <block wx:for="{{10}}" wx:key="key">

@@ -1,5 +1,7 @@
 {
     "pages": [
+
+        "pages/custom/shopmanage/shopmanage",
         "pages/index/index",
         "pages/create/create",
      
@@ -10,14 +12,14 @@
         "pages/custom/goodsdetail/goodsdetail",
         "pages/search/search",
         "pages/logs/logs",
-        "pages/custom/shopmanage/shopmanage",
+      
         
         "pages/mypage/mypage"
      
     ],
     "window": {
         "navigationBarBackgroundColor": "#ffffff",
-        "navigationBarTitleText": "聚微商",
+        "navigationBarTitleText": "微友帮帮",
         "navigationBarTextStyle": "black"
     }
 }

@@ -6,7 +6,7 @@ page:root{
   --t-grev-a:#999;
 
   --t-grev-back:#fafafa;
-
+    --t-grev-back-a:#f0f0f0;
   /**goods-type-1 宽度**/
   --goods-type-a: 355rpx;
 
