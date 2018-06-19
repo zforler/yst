@@ -1,0 +1,57 @@
+/* pages/custom/shopmanage/shopmanage.wxss */
+.container{
+    width: 100%;
+
+}
+.gd-list{
+    width: 100%;
+
+}
+.gd-item{
+    width:100%;
+    border: #f0f0f0 thin solid;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 40px;
+    overflow: hidden;
+}
+.gd-item-detail{
+    height: auto;
+    transition: height 1s;
+}
+.gd-item-row{
+    width:100%;
+    margin-bottom: 5px;
+}
+.gd-item-row-time,.gd-item-row-price,.gd-item-row-num,.gd-item-row-status{
+    display: inline-block;
+    width: auto;
+}
+.gd-item-price,.gd-item-bh{
+    display: inline-block;
+    width:100px;
+}
+.gd-item-sj{
+    transform: scale(0.8);
+}
+.gd-item-text{
+    padding: 5px;
+    background: #f0f0f0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    color:#999;
+    margin-right: 5px;
+}
+.gd-item-des{
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+.gd-item-img-c{
+    display: flex;
+    justify-content: space-between;
+}
+.gd-item-img{
+    width:50px;
+    height:50px;
+}

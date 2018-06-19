@@ -1,0 +1,45 @@
+<!--pages/custom/shopmanage/shopmanage.wxml-->
+<view class='container'>
+    <view><input value='' placeholder='搜索'></input></view>
+    <view>商品列表</view>
+
+    <view class='gd-list'>
+        <block wx:for="{{10}}" wx:key="key">
+            <view class='gd-item {{list["abs"]}}' bindtap='itemClick' data-val='abs'>
+                <view class='gd-item-row gd-item-row-num'>
+                    <text class='gd-item-text'>商品编号</text><text class='gd-item-bh'>abs</text>
+                </view>
+                <view class='gd-item-row gd-item-row-status'>
+                    <text class='gd-item-text'>商品上架</text>
+                    <switch class='gd-item-sj' color='#FF4421' checked="true" bindchange="changeProperty" data-property-name="indicatorDots" />
+                </view>
+                <view class='gd-item-row gd-item-row-name'>
+                    <text class='gd-item-text'>商品名称</text><text>阿斯顿发放</text>
+                </view>
+                <view class='gd-item-row gd-item-row-price'>
+                    <text class='gd-item-text'>商品价格</text><text class='gd-item-price'>123.23</text>
+                </view>
+                <view class='gd-item-row gd-item-row-time'>
+                    <text class='gd-item-text'>上架时间</text><text>2018.6.15</text>
+                </view>
+                <view class='gd-item-row'>
+                    <text class='gd-item-text'>商品描述</text>
+                    <view class='gd-item-des'>撒打发手动阀手动阀撒旦撒旦飞洒发顺丰的</view>
+                </view>
+                <view class='gd-item-row'>
+                    <text class='gd-item-text'>商品图片</text>
+                    <view class='gd-item-img-c'>
+                        <image class='gd-item-img' src='../../../img/1.jpg'></image>
+                        <image class='gd-item-img' src='../../../img/1.jpg'></image>
+                        <image class='gd-item-img' src='../../../img/1.jpg'></image>
+                        <image class='gd-item-img' src='../../../img/1.jpg'></image>
+                        <image class='gd-item-img' src='../../../img/1.jpg'></image>
+                        <image class='gd-item-img' src='../../../img/1.jpg'></image>
+                    </view>
+                </view>
+            </view>
+        </block>
+
+        
+    </view>
+</view>

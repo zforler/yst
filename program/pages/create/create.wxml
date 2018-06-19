@@ -30,7 +30,7 @@
                 <text class='create-label'>手机号</text>
                 <view class='create-input-c'>
                     <text class='fa fa-phone create-input-icon'></text>
-                    <input name='phone' class='create-input create-phone'></input>
+                    <input type='number' name='phone' class='create-input create-phone'></input>
                 </view>
             </view>
             <view class='create-form-item'>

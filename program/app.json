@@ -1,8 +1,8 @@
 {
     "pages": [
-          
+        "pages/index/index",
         "pages/create/create",
-      "pages/index/index",
+     
         "pages/wszm/wsxq/wsxq",
         "pages/custom/custom",
         "pages/classify/classify",
@@ -10,6 +10,8 @@
         "pages/custom/goodsdetail/goodsdetail",
         "pages/search/search",
         "pages/logs/logs",
+        "pages/custom/shopmanage/shopmanage",
+        
         "pages/mypage/mypage"
      
     ],

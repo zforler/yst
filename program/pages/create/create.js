@@ -44,14 +44,25 @@ function changeImg(){
 }
 
 function submit(e){
+    console.log(wx.getStorageSync('userInfo').code);
+    e.detail.value.shopType = 1;
+    e.detail.value.code = wx.getStorageSync('userInfo').code;
     wx.request({
         method: "POST",
         url: app.globalData.serviceUrl + 'shop/add',
+        header: {
+            'content-type': 'application/x-www-form-urlencoded', // 默认值
+            'charset': 'utf-8'
+        },
         data: e.detail.value,
         success: (data) => {
             let resdata = data.data;
             console.log(resdata);
-           
+           if(1 == resdata.code){
+               wx.redirectTo({
+                   url: "../custom/custom",
+               })
+           }
         }
     })
 }
