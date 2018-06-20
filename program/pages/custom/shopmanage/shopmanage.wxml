@@ -14,6 +14,7 @@
     </view>
 
     <view class='gd-list'>
+           
         <block wx:for="{{10}}" wx:key="key">
             <view class='gd-item {{list["abs"]}}' bindtap='itemClick' data-val='abs'>
                 <view class='gd-item-row gd-item-row-num'>

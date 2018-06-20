@@ -1,0 +1,43 @@
+<!--pages/custom/shopmanage/addgoods/addgoods.wxml-->
+
+<view class='gd-top'>
+    <button class='gd-btn gd-btn-save' hover-class='gd-btn-hover' bindtap='save'>保存</button>
+    <button class='gd-btn gd-btn-back' hover-class='gd-btn-hover' bindtap='back'>返回</button>
+</view>
+ <view class='gd-item' bindtap='itemClick' data-val='abs'>
+        <view class='gd-item-row gd-item-rowa'>
+            <text class='gd-item-text'>商品编号</text><input class='gd-add-bh' bindinput='inputChange' data-mark='goodsNum'></input>
+        </view>
+        <view class='gd-item-row gd-item-rowa'>
+            <text class='gd-item-text'>商品名称</text><input class='gd-add-name' bindinput='inputChange' data-mark='goodsName'>阿斯顿发放</input>
+        </view>
+        <view class='gd-item-row gd-item-rowa'>
+            <text class='gd-item-text'>商品价格</text><input type='number' class='gd-add-price' bindinput='inputChange' data-mark='goodsPrice'>123.23</input>
+        </view>
+        <view class='gd-item-row'>
+            <text class='gd-item-text'>商品描述</text>
+            <textarea class='gd-item-des' bindinput='inputChange' data-mark='goodsDesc'>撒打发手动阀手动阀撒旦撒旦飞洒发顺丰的</textarea>
+        </view>
+        <view class='gd-item-row'>
+            <view class='gd-img-addc'>
+                <text class='gd-item-text'>商品图片</text>
+                <button class='gd-btn gd-img-upbtn' hover-class='gd-btn-hover' bindtap='chooseImg'>点击添加</button>
+            </view>
+            <view class='gd-item-img-c'>
+                <block wx:for="{{prevImg}}" wx:key="key">
+                    <image class='gd-item-img' src='{{item}}'></image>
+                </block>
+            </view>
+            
+        </view>
+      
+</view>
+<view class='gd-item-img-d'>
+            <block wx:for="{{prevImg}}" wx:key="key">
+                <image class='gd-item-imgd' src='{{item}}'></image>
+            </block>
+</view>
+
+
+<import src="../../../../component/mask/mask.wxml"/>
+<template is="mask" data="{{mask}}"/>

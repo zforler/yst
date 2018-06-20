@@ -15,7 +15,9 @@ new Page({
 
 
 function addGoods(){
-
+    wx.navigateTo({
+        url: 'addgoods/addgoods',
+    })
 }
 
 function deleteGoods(){

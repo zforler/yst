@@ -1,0 +1,15 @@
+<template name="mask">
+    <block wx:if="{{mask.show}}">
+        <view class='mask'>
+            <block wx:if="{{mask.type=='process'}}">
+                <view class='mask-process-c'>
+                    <view class='mask-process'>
+                        <view class='mask-process-text'>图片上传中[{{mask.process.num}}/{{mask.process.totalNum}}]</view>
+                        <progress percent="{{mask.process.percent}}" show-info />
+                    </view>
+                </view>
+            </block>
+            
+        </view>
+    </block>
+</template>

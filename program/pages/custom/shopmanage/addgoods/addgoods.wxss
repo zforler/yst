@@ -1,30 +1,33 @@
+/* pages/custom/shopmanage/addgoods/addgoods.wxss */
 /* pages/custom/shopmanage/shopmanage.wxss */
-.container{
-    width: 100%;
+@import "../../../../component/mask/mask.wxss";
 
-}
-
-.gs-search{
-    background-color: var(--t-grev-back-a);
-    width:100%;
-    padding: 5px;
-    box-sizing: border-box;
+.gd-top{
     display: flex;
     justify-content: space-around;
+    background-color: var(--t-grev-back-a);
+    height: 50px;
     align-items: center;
 }
-.gs-search-a{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #fff;
-    padding-left: 5px;
+.gd-btn{
+    background-color:#00B26A;
+    color:#fff;
+    font-size: 13px;
+    height:35px;
+    padding: 5px 8px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
-.gd-s-icon{
+.gd-btn-hover{
+    background-color: rgba(0,178,106,0.5);
     color:#999;
-    font-size: 40rpx;
-    display: inline-block;
 }
+.gd-btn-save,.gd-btn-back{
+    width:90px;
+}
+
+
 .gd-s-input{
     display: inline-block;
     border-radius: 3px;
@@ -62,13 +65,9 @@
     border: #f0f0f0 thin solid;
     box-sizing: border-box;
     padding: 5px;
-    height: 40px;
-    overflow: hidden;
+    margin-bottom:5px;
 }
-.gd-item-detail{
-    height: auto;
-    transition: height 1s;
-}
+
 .gd-item-row{
     width:100%;
     margin-bottom: 5px;
@@ -86,7 +85,6 @@
 }
 .gd-item-text{
     padding: 5px;
-    background: #f0f0f0;
     display: inline-block;
     text-align: center;
     border-radius: 5px;
@@ -94,8 +92,12 @@
     margin-right: 5px;
 }
 .gd-item-des{
-    padding: 0 8px;
+    padding: 3px 8px;
     box-sizing: border-box;
+    border:var(--t-grev-back-a) thin solid;
+    margin-top:5px;
+    height:80px;
+    width:100%;
 }
 .gd-item-img-c{
     display: flex;
@@ -108,8 +110,31 @@
 
 input{
     border:var(--t-grev-back-a) thin solid;
+    display: inline-block;
+    width:555rpx;
+    padding: 0 5px;
+    box-sizing: border-box;
+    height: 35px;
 }
 .gd-item-rowa{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.gd-img-addc{
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center; */
+   
+   
+}
+.gd-img-upbtn{
+    background-color:#00B26A;
+    color:#fff;
+     float: right;
+}
+.gd-item-imgd{
+     border-top:var(--t-grev-back-a) 5px solid;
+     width:100%;
 }

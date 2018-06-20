@@ -1,7 +1,8 @@
 {
     "pages": [
-
+        "pages/custom/shopmanage/addgoods/addgoods",
         "pages/custom/shopmanage/shopmanage",
+
         "pages/index/index",
         "pages/create/create",
      
