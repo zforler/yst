@@ -16,7 +16,7 @@ new Page({
 
 function addGoods(){
     wx.navigateTo({
-        url: 'addgoods/addgoods',
+        url: 'addgoods/addgoods?shopId='+1,
     })
 }
 

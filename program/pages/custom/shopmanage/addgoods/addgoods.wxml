@@ -4,19 +4,22 @@
     <button class='gd-btn gd-btn-save' hover-class='gd-btn-hover' bindtap='save'>保存</button>
     <button class='gd-btn gd-btn-back' hover-class='gd-btn-hover' bindtap='back'>返回</button>
 </view>
- <view class='gd-item' bindtap='itemClick' data-val='abs'>
+ <view class='gd-item' data-val='abs'>
         <view class='gd-item-row gd-item-rowa'>
-            <text class='gd-item-text'>商品编号</text><input class='gd-add-bh' bindinput='inputChange' data-mark='goodsNum'></input>
+            <text class='gd-item-text'>商品编号</text>
+            <input class='gd-add-bh' bindinput='inputChange' data-mark='goodsNum'></input>
         </view>
         <view class='gd-item-row gd-item-rowa'>
-            <text class='gd-item-text'>商品名称</text><input class='gd-add-name' bindinput='inputChange' data-mark='goodsName'>阿斯顿发放</input>
+            <text class='gd-item-text'>商品名称</text>
+            <input class='gd-add-name' bindinput='inputChange' data-mark='goodsName'>阿斯顿发放</input>
         </view>
         <view class='gd-item-row gd-item-rowa'>
-            <text class='gd-item-text'>商品价格</text><input type='number' class='gd-add-price' bindinput='inputChange' data-mark='goodsPrice'>123.23</input>
+            <text class='gd-item-text'>商品价格</text>
+            <input type='number' class='gd-add-price' bindinput='inputChange' data-mark='goodsPrice'>123.23</input>
         </view>
         <view class='gd-item-row'>
             <text class='gd-item-text'>商品描述</text>
-            <textarea class='gd-item-des' bindinput='inputChange' data-mark='goodsDesc'>撒打发手动阀手动阀撒旦撒旦飞洒发顺丰的</textarea>
+            <textarea class='gd-item-des' bindinput='inputChange' data-mark='goodsDesc'></textarea>
         </view>
         <view class='gd-item-row'>
             <view class='gd-img-addc'>

@@ -1,16 +1,12 @@
-function show(){
+function show(params){
     this.setData({
-        mask: {
-            show: true
-        }
+        mask: params
     })
 }
 
-function hide(){
+function hide(params){
     this.setData({
-        mask: {
-            show: false
-        }
+        mask: params
     })
 }
 
